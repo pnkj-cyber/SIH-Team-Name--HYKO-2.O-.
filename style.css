@@ -1,0 +1,180 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Navbar container */
+.navbar {
+  background: linear-gradient(to right, #1f4657, #203a43, #2c5364);
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #00c6ff;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #e0e0e0;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-transform: capitalize;
+}
+
+/* Hover and active states */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00c6ff;
+  transform: scale(1.05);
+  border-bottom: 2px solid #00c6ff;
+}
+
+/* Toggler icon */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("HYKO 2.0/WhatsApp Image 2025-09-08 at 09.33.49_d52f2be4.jpg");
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: #203a43;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+
+
+/* Hero Section */
+.hero {
+  background: url('https://t4.ftcdn.net/jpg/01/18/60/91/360_F_118609188_YHiLcw52AlRAk2wRPLOjOM7wmIHXa8ez.jpg') center/cover no-repeat;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Welcome Section */
+.welcome {
+  padding: 60px 0;
+  text-align: center;
+}
+.welcome h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Features */
+.features {
+  padding: 60px 0;
+}
+.feature-box {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.feature-box:hover {
+  background: #00b894;
+  color: white;
+}
+.feature-box i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #00b894;
+}
+.feature-box:hover i {
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #00b894;
+  color: #0a0909;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.nav-link.dropdown-toggle:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #f0f0f0;
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 198, 255, 0.2);
+  padding: 0.5rem 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  color: #e0e0e0;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #00c6ff;
+  color: #000;
+  transform: translateX(5px);
+  border-radius: 4px;
+}
+
+/* Optional: Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
